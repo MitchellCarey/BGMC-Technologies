@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://bgmc-technologies.co.uk/</loc>
+    <lastmod>2026-06-22</lastmod>
+    <image:image>
+      <image:loc>https://bgmc-technologies.co.uk/logo.png</image:loc>
+      <image:title>BGMC Technologies Ltd logo</image:title>
+    </image:image>
+  </url>
+</urlset>
