@@ -276,6 +276,14 @@ document.addEventListener('DOMContentLoaded', async function() {
     const resourceScript = '<script>window.__resources = ' +
       JSON.stringify(resourceMap).split('</' + 'script>').join('<\\/' + 'script>') +
       ';</' + 'script>';
+    const contrastStyle = [
+      '<style id="bgmc-contrast-safety">',
+      'body,#dc-root,.sc-host{color:#f3eee5;background:#100f0d;}',
+      '#form{color:#f3eee5;}',
+      'p[style*="color:#5a5248"],span[style*="color:#5a5248"],p[style*="rgb(90, 82, 72)"],span[style*="rgb(90, 82, 72)"]{color:#7a746a!important;}',
+      'span[style*="color:#5a5248"][style*="flex"],span[style*="rgb(90, 82, 72)"][style*="flex"]{color:#c98b7a!important;}',
+      '</style>'
+    ].join('');
     // Inject after <head> so the DOCTYPE stays first; prepending the script
     // would push the parser into quirks mode. DOMParser always emits a <head>
     // (synthesizing one if the source HTML omitted it) but may carry
@@ -284,7 +292,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     const headOpen = template.match(/<head[^>]*>/i);
     if (headOpen) {
       const i = headOpen.index + headOpen[0].length;
-      template = template.slice(0, i) + resourceScript + template.slice(i);
+      template = template.slice(0, i) + resourceScript + contrastStyle + template.slice(i);
     }
 
     // Parse the template and swap the root element. Scripts inserted via
