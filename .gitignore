@@ -2,3 +2,9 @@
 test-results/
 playwright-report/
 node_modules/
+
+# Not needed for the static website deploy
+instagram-kit/
+scripts/
+assets/brand/google-business-cover-engraved-wordmark.png
+assets/brand/wordmark.png
