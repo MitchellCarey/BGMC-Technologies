@@ -3,10 +3,18 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://bgmc-technologies.co.uk/</loc>
-    <lastmod>2026-06-22</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <image:image>
       <image:loc>https://bgmc-technologies.co.uk/assets/brand/logo.png</image:loc>
       <image:title>BGMC Technologies B logo</image:title>
     </image:image>
+  </url>
+  <url>
+    <loc>https://bgmc-technologies.co.uk/privacy-policy</loc>
+    <lastmod>2026-06-26</lastmod>
+  </url>
+  <url>
+    <loc>https://bgmc-technologies.co.uk/terms</loc>
+    <lastmod>2026-06-26</lastmod>
   </url>
 </urlset>
