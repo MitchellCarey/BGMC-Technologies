@@ -3,8 +3,19 @@ test-results/
 playwright-report/
 node_modules/
 
-# Not needed for the static website deploy
+# Secrets — never commit API keys / env files
+.env
+.env.*
+!.env.example
+*.local
+secrets/
+
+# Content/publishing work lives in ../BGMC Content Publishing
 instagram-kit/
+prospects/
+remotion-reel/
 scripts/
+social-prototypes/
+assets/references/
 assets/brand/google-business-cover-engraved-wordmark.png
 assets/brand/wordmark.png
