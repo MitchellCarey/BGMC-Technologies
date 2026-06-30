@@ -50,9 +50,9 @@
     <rect x="0" y="0" width="358" height="62" rx="8" fill="#151914" stroke="#e6a92e" stroke-width="2"/>
     <circle cx="33" cy="31" r="6" fill="#e6a92e"/>
     <text x="56" y="39" fill="#e6a92e" font-size="22" font-weight="850">Free 3-point AI Fix List</text>
-    <rect x="382" y="0" width="238" height="62" rx="8" fill="#151914" stroke="#33423b"/>
+    <rect x="382" y="0" width="276" height="62" rx="8" fill="#151914" stroke="#33423b"/>
     <circle cx="408" cy="31" r="6" fill="#54b7a6"/>
-    <text x="438" y="39" fill="#efeae2" font-size="18" font-weight="720">Build. Ship. Automate.</text>
+    <text x="434" y="39" fill="#efeae2" font-size="17" font-weight="720">Build. Ship. Automate.</text>
   </g>
 
   <g transform="translate(686 78)" filter="url(#shadow)">
