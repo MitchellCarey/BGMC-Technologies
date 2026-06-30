@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="260" viewBox="0 0 980 260" role="img" aria-labelledby="title desc">
+  <title id="title">BGMC Technologies lockup</title>
+  <desc id="desc">Starter horizontal lockup using the BGMC mark and company name.</desc>
+  <rect width="980" height="260" fill="none"/>
+  <g transform="translate(24 24) scale(0.414)">
+    <path d="M78 30H286C378 30 438 90 438 171C438 225 408 264 360 282C415 300 454 342 454 401C454 479 394 482 300 482H78V30Z" fill="none" stroke="#e6a92e" stroke-width="46" stroke-linejoin="round"/>
+    <path d="M78 246H250" fill="none" stroke="#e6a92e" stroke-width="38" stroke-linecap="round"/>
+    <path d="M238 104V408" fill="none" stroke="#e6a92e" stroke-width="34" stroke-linecap="round"/>
+    <path d="M238 214L318 142M238 246H332M238 300L326 374M238 300L156 376M238 246L156 164" fill="none" stroke="#e6a92e" stroke-width="28" stroke-linecap="round"/>
+    <circle cx="238" cy="104" r="34" fill="#e6a92e"/>
+    <circle cx="318" cy="142" r="34" fill="#e6a92e"/>
+    <circle cx="332" cy="246" r="34" fill="#e6a92e"/>
+    <circle cx="326" cy="374" r="34" fill="#e6a92e"/>
+    <circle cx="238" cy="408" r="34" fill="#e6a92e"/>
+    <circle cx="156" cy="376" r="34" fill="#e6a92e"/>
+    <circle cx="156" cy="164" r="34" fill="#e6a92e"/>
+  </g>
+  <g fill="#e6a92e" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif">
+    <text x="292" y="122" font-size="86" font-weight="900" letter-spacing="0">BGMC</text>
+    <text x="296" y="188" font-size="45" font-weight="780" letter-spacing="0">Technologies Ltd</text>
+  </g>
+</svg>
+
