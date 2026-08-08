@@ -3,18 +3,26 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://bgmc-technologies.co.uk/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <image:image>
       <image:loc>https://bgmc-technologies.co.uk/assets/brand/social-preview.png</image:loc>
-      <image:title>BGMC Technologies quick AI development and automation preview</image:title>
+      <image:title>BGMC Technologies practical AI consultancy</image:title>
     </image:image>
   </url>
   <url>
+    <loc>https://bgmc-technologies.co.uk/services/</loc>
+    <lastmod>2026-08-08</lastmod>
+  </url>
+  <url>
+    <loc>https://bgmc-technologies.co.uk/about/</loc>
+    <lastmod>2026-08-08</lastmod>
+  </url>
+  <url>
     <loc>https://bgmc-technologies.co.uk/privacy-policy</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-08-08</lastmod>
   </url>
   <url>
     <loc>https://bgmc-technologies.co.uk/terms</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-08-08</lastmod>
   </url>
 </urlset>
