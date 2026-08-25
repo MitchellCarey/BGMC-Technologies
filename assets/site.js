@@ -4,7 +4,6 @@ const menu = document.querySelector("[data-menu]");
 const themeToggle = document.querySelector("[data-theme-toggle]");
 const themeRoot = document.documentElement;
 const themeStorageKey = "bgmc-theme";
-const themeMediaQuery = window.matchMedia("(prefers-color-scheme: light)");
 const themeColorMeta = document.querySelector('meta[name="theme-color"]');
 
 const getActiveTheme = () => {
@@ -12,7 +11,7 @@ const getActiveTheme = () => {
     return themeRoot.dataset.theme;
   }
 
-  return themeMediaQuery.matches ? "light" : "dark";
+  return "dark";
 };
 
 const updateThemeToggle = () => {
@@ -44,16 +43,6 @@ if (themeToggle) {
 
     updateThemeToggle();
   });
-}
-
-const handleSystemThemeChange = () => {
-  if (!themeRoot.dataset.theme) updateThemeToggle();
-};
-
-if (typeof themeMediaQuery.addEventListener === "function") {
-  themeMediaQuery.addEventListener("change", handleSystemThemeChange);
-} else if (typeof themeMediaQuery.addListener === "function") {
-  themeMediaQuery.addListener(handleSystemThemeChange);
 }
 
 if (menuButton && menu) {

@@ -1,19 +1,16 @@
 (() => {
   const storageKey = "bgmc-theme";
+  let savedTheme = null;
 
   try {
-    const savedTheme = window.localStorage.getItem(storageKey);
-    const hasSavedTheme = savedTheme === "light" || savedTheme === "dark";
-    const systemTheme = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
-    const theme = hasSavedTheme ? savedTheme : systemTheme;
-
-    if (hasSavedTheme) {
-      document.documentElement.dataset.theme = savedTheme;
-    }
-
-    const themeColor = document.querySelector('meta[name="theme-color"]');
-    if (themeColor) themeColor.setAttribute("content", theme === "light" ? "#f8f6f1" : "#100f0d");
+    savedTheme = window.localStorage.getItem(storageKey);
   } catch {
-    // The CSS media query remains the fallback when storage is unavailable.
+    // Dark mode remains the fallback when storage is unavailable.
   }
+
+  const theme = savedTheme === "light" || savedTheme === "dark" ? savedTheme : "dark";
+  document.documentElement.dataset.theme = theme;
+
+  const themeColor = document.querySelector('meta[name="theme-color"]');
+  if (themeColor) themeColor.setAttribute("content", theme === "light" ? "#f4f0e7" : "#100f0d");
 })();
