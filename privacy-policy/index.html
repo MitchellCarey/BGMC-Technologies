@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy | BGMC Technologies Ltd</title>
-  <meta name="description" content="Privacy Policy for BGMC Technologies Ltd, covering free AI consultation requests, business discovery, client communications, analytics and service delivery data.">
+  <meta name="description" content="Privacy Policy for BGMC Technologies Ltd, covering website visitors, client communications, BGMC CRM call records, business-card extraction and service delivery data.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <link rel="canonical" href="https://bgmc-technologies.co.uk/privacy-policy">
   <link rel="icon" href="../assets/brand/favicon.ico?v=20260622" type="image/x-icon" sizes="any">
@@ -18,7 +18,7 @@
   <meta property="og:site_name" content="BGMC Technologies Ltd">
   <meta property="og:url" content="https://bgmc-technologies.co.uk/privacy-policy">
   <meta property="og:title" content="Privacy Policy | BGMC Technologies Ltd">
-  <meta property="og:description" content="How BGMC Technologies Ltd handles personal data from website visitors, consultation requests and clients.">
+  <meta property="og:description" content="How BGMC Technologies Ltd handles website, client, BGMC CRM call and business-card data.">
   <meta property="og:image" content="https://bgmc-technologies.co.uk/assets/brand/social-preview.png">
   <meta property="og:image:secure_url" content="https://bgmc-technologies.co.uk/assets/brand/social-preview.png">
   <meta property="og:image:type" content="image/png">
@@ -27,7 +27,7 @@
   <meta property="og:image:alt" content="BGMC Technologies, practical AI consultancy for UK businesses">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Privacy Policy | BGMC Technologies Ltd">
-  <meta name="twitter:description" content="How BGMC Technologies Ltd handles personal data from website visitors, consultation requests and clients.">
+  <meta name="twitter:description" content="How BGMC Technologies Ltd handles website, client, BGMC CRM call and business-card data.">
   <meta name="twitter:image" content="https://bgmc-technologies.co.uk/assets/brand/social-preview.png">
   <meta name="twitter:image:alt" content="BGMC Technologies, practical AI consultancy for UK businesses">
   <style>
@@ -345,6 +345,13 @@
     }
   </style>
   <link rel="stylesheet" href="../assets/theme.css?v=20260825-4">
+  <style>
+    .updated,
+    .toc-title,
+    .footer-bottom {
+      color: var(--muted) !important;
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -356,7 +363,7 @@
       "name": "BGMC Technologies Ltd",
       "url": "https://bgmc-technologies.co.uk/"
     },
-    "dateModified": "2026-08-08",
+    "dateModified": "2026-08-26",
     "inLanguage": "en-GB"
   }
   </script>
@@ -394,8 +401,8 @@
       <div class="legal-hero-inner">
         <p class="eyebrow">Privacy</p>
         <h1>Privacy Policy</h1>
-        <p class="intro">How BGMC Technologies Ltd handles personal data from website visitors, free AI consultation requests, business discovery and client work.</p>
-        <p class="updated">Last updated: <time datetime="2026-08-08">8 August 2026</time></p>
+        <p class="intro">How BGMC Technologies Ltd handles personal data from website visitors, business conversations, BGMC CRM records and client work.</p>
+        <p class="updated">Last updated: <time datetime="2026-08-26">26 August 2026</time></p>
       </div>
     </div>
 
@@ -405,6 +412,8 @@
         <ul>
           <li><a href="#who-we-are">Who we are</a></li>
           <li><a href="#data-we-collect">What personal data we collect</a></li>
+          <li><a href="#call-recording">Call recording, transcription and CRM records</a></li>
+          <li><a href="#business-card-data">Business-card images and AI extraction</a></li>
           <li><a href="#how-we-collect">How we collect personal data</a></li>
           <li><a href="#why-we-use">Why we use personal data</a></li>
           <li><a href="#lawful-basis">Lawful basis</a></li>
@@ -433,9 +442,37 @@
             <li>Website, product, workflow, automation, AI workflow or process information submitted for review</li>
             <li>Files, links, screenshots or technical details voluntarily sent to us</li>
             <li>Communications between you and us</li>
+            <li>Business-call information where a call flow has recording enabled, as described below</li>
             <li>Basic technical information such as IP address, browser type, device information, pages visited and server logs</li>
             <li>Analytics data from Cloudflare Web Analytics or similar analytics tools, if used</li>
           </ul>
+        </section>
+
+        <section id="call-recording">
+          <h2>Call recording, transcription and CRM conversation records</h2>
+          <p>When a business call uses a BGMC CRM call flow with recording or transcription enabled, BGMC may record the call and/or receive a live transcript. Recording is not applied to every call or every communication.</p>
+          <p>We may process the call audio and transcript, telephone numbers, date and time, duration (calculated from call times), direction, outcome or status, participants, the related contact or company, and related CRM activity or notes. We use these records to route and monitor business calls, maintain an accurate record of client and prospect conversations, support follow-up and relationship management, and investigate or resolve disputes.</p>
+          <p>Authorised BGMC CRM users may access relevant records where they need them for their work. Twilio provides the telephony, recording and real-time transcription service. The configured transcription engine is Google speech-to-text through Twilio, using a telephony speech model. The CRM stores transcript segments, call metadata and the resulting CRM activity in its Postgres database; it stores the Twilio recording reference and retrieves the audio from Twilio when an authorised user opens it. The call flow does not currently send call content to a generative AI service for summarising or analysis.</p>
+          <p>For this processing, our usual lawful basis is legitimate interests: managing business communications, maintaining an accurate relationship record and handling follow-up or disputes. Where a call is part of taking steps at your request or providing agreed services, contract or pre-contract processing may also apply. We do not rely on consent as the default lawful basis for call recording. If we specifically ask for consent for a particular use, you can withdraw it by contacting <a class="contact-link" href="mailto:hello@bgmc-technologies.co.uk">hello@bgmc-technologies.co.uk</a>.</p>
+          <div class="note">
+            <strong>Short spoken notice</strong>
+            <p>“This call is recorded and transcribed, and a record is kept in our CRM for call monitoring and follow-up. Details are in our privacy notice.”</p>
+          </div>
+          <p>Retention for call records is currently criteria-based rather than a fixed number of months. The current CRM implementation does not run an automatic call-retention schedule:</p>
+          <ul>
+            <li><strong>Audio recordings:</strong> held in Twilio while reasonably needed for call monitoring, the client or prospect record, follow-up or a dispute or legal obligation, then deleted by an authorised administrator when no longer needed. Twilio says deleted recording media cannot be recovered and recording metadata may remain for up to 40 days after deletion.</li>
+            <li><strong>Transcripts:</strong> stored in the CRM while reasonably needed to maintain an accurate conversation record, support follow-up or handle a dispute or legal obligation.</li>
+            <li><strong>Call metadata:</strong> including numbers, times, direction, outcome and participant status, stored while needed to operate the CRM, maintain the relationship record, investigate disputes or meet legal obligations.</li>
+            <li><strong>CRM notes and activity records:</strong> kept while the client or prospect relationship and follow-up require them, and afterwards only when needed for legal, accounting or dispute purposes.</li>
+          </ul>
+          <p>You can ask us to provide, correct, delete or restrict relevant call records, or object to processing, by contacting <a class="contact-link" href="mailto:hello@bgmc-technologies.co.uk">hello@bgmc-technologies.co.uk</a>. We will assess the request against any continuing legal obligation or need to establish, exercise or defend legal claims.</p>
+        </section>
+
+        <section id="business-card-data">
+          <h2>Business-card images and AI-assisted extraction</h2>
+          <p>BGMC CRM has a live business-card scanning feature. When you choose it, the JPEG image is temporarily sent to Vercel AI Gateway, which uses OpenAI’s GPT-4.1 mini model to extract details visibly printed on the card. The current CRM flow does not save the raw image to the device, CRM or file storage.</p>
+          <p>The extracted draft may contain a name, job title, email address, telephone number, company, domain and website. If you save it, the selected contact or company details and the import status are stored in the CRM. Where a company name is not printed, the feature may use a public-web search to suggest one for your review; it does not silently create a record from that suggestion.</p>
+          <p>The usual lawful basis is legitimate interests in organising business contacts and carrying out requested CRM or client work. Contract or pre-contract processing may also apply where the scan is part of requested services. The raw image is not retained by BGMC in this flow; saved extracted contact and company data follows the CRM retention criteria in this notice.</p>
         </section>
 
         <section id="how-we-collect">
@@ -446,6 +483,8 @@
             <li>You contact us through the website</li>
             <li>You request a review, quote or proposal</li>
             <li>You send us information about your business, an operational bottleneck, workflow, automation or process</li>
+            <li>You place or receive a business call through a BGMC CRM call flow with recording enabled</li>
+            <li>You scan or upload a business card in BGMC CRM</li>
             <li>You interact with our social media profiles</li>
             <li>You visit the website and technical logs or analytics are generated</li>
           </ul>
@@ -462,6 +501,8 @@
             <li>Deliver services to clients</li>
             <li>Manage client relationships</li>
             <li>Maintain records</li>
+            <li>Record, transcribe and create CRM activity records for business calls where recording is enabled</li>
+            <li>Extract business-card details to help create or update CRM contacts and companies</li>
             <li>Improve our website and services</li>
             <li>Keep the website secure</li>
             <li>Comply with legal, tax and accounting obligations</li>
@@ -472,8 +513,8 @@
           <h2>Lawful basis</h2>
           <p>Depending on the situation, we rely on:</p>
           <ul>
-            <li>Legitimate interests: to respond to business enquiries, review submitted materials, improve our services, keep records and secure the website.</li>
-            <li>Contract or pre-contract steps: where we are preparing a proposal, quote or delivering services.</li>
+            <li>Legitimate interests: to respond to business enquiries, review submitted materials, maintain business-call and CRM records, manage relationships, carry out requested card extraction, improve our services and secure the website.</li>
+            <li>Contract or pre-contract steps: where processing is necessary to prepare a proposal, quote, deliver services or carry out requested CRM work.</li>
             <li>Legal obligation: where we need to keep records for tax, accounting or compliance reasons.</li>
             <li>Consent: where consent is specifically requested, such as for optional marketing or certain non-essential cookies.</li>
           </ul>
@@ -481,31 +522,32 @@
 
         <section id="sharing">
           <h2>Sharing personal data</h2>
-          <p>We may share personal data with trusted service providers where necessary, such as:</p>
+          <p>We may share personal data with trusted service providers where necessary. Relevant providers for BGMC CRM and this website include:</p>
           <ul>
-            <li>Website hosting and security providers</li>
-            <li>Email providers</li>
-            <li>Website form-processing providers</li>
-            <li>Analytics providers, including Cloudflare Web Analytics where enabled</li>
-            <li>CRM or project-management tools</li>
-            <li>Cloud storage providers</li>
-            <li>Professional advisers such as accountants or lawyers</li>
-            <li>AI, automation or software tools used to review or process submitted materials, where relevant to the service</li>
+            <li><strong>Twilio:</strong> business telephony, call recording and real-time transcription.</li>
+            <li><strong>Google speech-to-text:</strong> the transcription engine used through Twilio for the CRM call flow.</li>
+            <li><strong>Vercel:</strong> hosting for the CRM web/API service and the AI Gateway used for business-card extraction.</li>
+            <li><strong>Neon:</strong> the Postgres database provider used for CRM records, including call transcripts, metadata and activity records.</li>
+            <li><strong>OpenAI:</strong> the GPT-4.1 mini model used through Vercel AI Gateway for business-card image extraction.</li>
+            <li><strong>Cloudflare:</strong> Cloudflare Web Analytics where enabled.</li>
+            <li>Email, calendar, social-messaging, professional-adviser and other providers where you or a client has connected them to a BGMC service or where needed to deliver the service.</li>
           </ul>
           <p>We do not sell personal data.</p>
         </section>
 
         <section id="international-transfers">
           <h2>International transfers</h2>
-          <p>Some providers may process data outside the UK. Where this happens, we will take appropriate steps to protect personal data, such as using providers with suitable contractual safeguards.</p>
+          <p>Some providers named above may process data outside the UK, and the route may depend on the provider and account configuration. Twilio’s Google real-time transcription uses Google’s global speech-to-text endpoints. Where a restricted transfer is required, BGMC uses an adequacy decision or an appropriate safeguard under UK data-protection law, such as the UK International Data Transfer Agreement or the UK Addendum to EU standard contractual clauses, as applicable. Contact us for current processor-specific transfer details and a copy of the relevant safeguard.</p>
         </section>
 
         <section id="retention">
           <h2>How long we keep personal data</h2>
           <p>We keep personal data only for as long as needed. As a guide:</p>
           <ul>
-            <li>General enquiries: up to 24 months after the last interaction.</li>
+            <li>General enquiries: while needed to respond, follow up, manage the relationship or handle a dispute or legal obligation.</li>
             <li>Client and project records: for the duration of the relationship and then as needed for legal, tax, accounting or dispute purposes.</li>
+            <li>Business-card images: not retained by BGMC in the current extraction flow; saved extracted contact and company data follows the client and CRM-record criteria above.</li>
+            <li>Business-call audio, transcripts, metadata and CRM activity: the separate criteria-based periods set out in the call-recording section above.</li>
             <li>Website logs: for a limited period needed for security and maintenance.</li>
             <li>Marketing data: until consent is withdrawn or the person unsubscribes.</li>
           </ul>
@@ -524,12 +566,14 @@
             <li>Withdraw consent where processing is based on consent</li>
           </ul>
           <p>To exercise these rights, contact: <a class="contact-link" href="mailto:hello@bgmc-technologies.co.uk">hello@bgmc-technologies.co.uk</a>.</p>
+          <p>You can object to processing based on legitimate interests at any time. We will stop unless we can demonstrate compelling legitimate grounds, or need the information to establish, exercise or defend legal claims.</p>
+          <p>Where we rely on consent, withdraw it by emailing us. Withdrawal does not affect processing that took place before withdrawal, or processing that has another lawful basis.</p>
         </section>
 
         <section id="complaints">
           <h2>Complaints</h2>
           <p>If you have a privacy concern, please contact us first at <a class="contact-link" href="mailto:hello@bgmc-technologies.co.uk">hello@bgmc-technologies.co.uk</a>.</p>
-          <p>You also have the right to complain to the UK Information Commissioner's Office.</p>
+          <p>You also have the right to complain to the <a href="https://ico.org.uk/make-a-complaint/">UK Information Commissioner's Office</a>.</p>
         </section>
 
         <section id="cookies">
